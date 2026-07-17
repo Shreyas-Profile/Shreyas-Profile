@@ -11,6 +11,7 @@ server anyone can plug into Claude Desktop, Cursor, or their own agent.
 | [docs-mcp](https://github.com/globalion/docs-mcp) | Vector RAG over Word/Excel/PDF/PowerPoint with page citations. Break-even Stripe billing. | [docs.regiq.in](https://docs.regiq.in) | `io.github.Shreyas-Profile/docs-mcp` |
 | [cron-mcp](https://github.com/globalion/cron-mcp) | Cron-as-a-service — schedule prompts on any cron expression, get webhooks when they fire. | [cron.regiq.in](https://cron.regiq.in) | `io.github.Shreyas-Profile/cron-mcp` |
 | [browser-mcp](https://github.com/globalion/browser-mcp) | Real Chrome browser as an MCP skill. Per-user isolation, encrypted credential vault. | [browser.regiq.in](https://browser.regiq.in) | `io.github.Shreyas-Profile/browser-mcp` |
+| [tor-mcp](https://github.com/globalion/tor-mcp) | HTTP fetch over the Tor network. Rotating anonymous exit IPs, .onion support, no body logging. | [tor.regiq.in](https://tor.regiq.in) | `io.github.Shreyas-Profile/tor-mcp` |
 
 ## The platform that ties them together
 
@@ -21,9 +22,9 @@ skill's server. Data stays isolated per user; billing rolls up to Paperloft's
 shared pool.
 
 Also runs internal skills: `browser_*` (drives the hosted Chrome), `cron_*`
-(scheduled prompts fire back through the chat), `docs_*` (RAG search), and
-Nova-reminders (WhatsApp/Telegram delivery, prescription intake, medication
-schedules).
+(scheduled prompts fire back through the chat), `docs_*` (RAG search),
+`tor_*` (anonymous fetch), and Nova-reminders (WhatsApp/Telegram delivery,
+prescription intake, medication schedules).
 
 ## Tech I reach for
 
